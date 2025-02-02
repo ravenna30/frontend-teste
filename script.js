@@ -1,12 +1,29 @@
-// Espera o DOM carregar completamente antes de executar o código
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // Seleciona o botão e o título no HTML
-    const botao = document.querySelector("button");
-    const titulo = document.querySelector("h1");
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
-    // Função que altera o texto do título quando o botão é clicado
-    botao.addEventListener("click", function() {
-        titulo.textContent = "Você clicou no botão!";
-    });
-});
+h1 {
+    color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
